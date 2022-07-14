@@ -33,6 +33,10 @@ git clone --depth=1 https://github.com/ysc3839/luci-proto-minieap
 # Add OpenClash
 git clone --depth=1 -b master https://github.com/vernesong/OpenClash
 
+# Add luci-app-unblockneteasemusic
+rm -rf ../../customfeeds/luci/applications/luci-app-unblockmusic
+git clone --depth=1 https://github.com/UnblockNeteaseMusic/luci-app-unblockneteasemusic.git
+
 # Add luci-app-onliner (need luci-app-nlbwmon)
 git clone --depth=1 https://github.com/rufengsuixing/luci-app-onliner
 
