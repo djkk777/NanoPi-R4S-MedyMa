@@ -30,7 +30,6 @@ env:
 jobs:
   Build:
     runs-on: ubuntu-20.04
-    if: github.repository == 'canmy777/NanoPi-R4S-MedyMa'
     outputs:
       OPENWRTROOT: ${{ steps.update.outputs.OPENWRTROOT }}
       PLATFORM: ${{ steps.compile.outputs.PLATFORM }}
@@ -177,7 +176,6 @@ jobs:
   Upload:
     needs: [Build]
     runs-on: ubuntu-20.04
-    if: github.repository == 'canmy777/NanoPi-R4S-MedyMa'
     steps:
       - name: Checkout
         uses: actions/checkout@main
